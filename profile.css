@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    height: 100vh;
+    min-width: 375px;
+    background: url("images/bg-pattern-top.svg") -700px -600px no-repeat, url("images/bg-pattern-bottom.svg") 200px 350px no-repeat;
+    background-color: hsl(185, 75%, 39%);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+}
+
+.card {
+    width: 350px;
+    height: 370px;
+    background-color: white;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    overflow: hidden;
+}
+
+.card .top{
+    height: calc(.4 * 370px);
+    /* width: 100%; */
+    background:url(images/bg-pattern-card.svg);
+    background-size: cover;
+
+}
+
+
+.card .middle {
+    height: calc(.4 * 370px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+
+}
+
+.profile_picture{
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: relative;
+    top:-70px;
+    left: 125px;
+    margin-bottom: 0;
+}
+
+.middle #name {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: -50px;
+}
+
+.middle p span {
+    font-weight: 400;
+    color: rgb(177, 176, 176);
+}
+
+.middle p:nth-of-type(2){
+    color: rgb(177, 176, 176);
+    margin-top: 10px;
+}
+
+.card .bottom{
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.bottom .metric{
+    font-size: 9px;
+    padding-top: 4px;
+    color: rgb(177, 176, 176);
+    letter-spacing: 0.2em;
+}
+
+@media (min-width: 1000px){
+    body{
+        background: url("images/bg-pattern-top.svg") -250px -500px no-repeat, url("images/bg-pattern-bottom.svg") 700px 400px no-repeat;
+
+        background-color: hsl(185, 75%, 39%);
+
+    }
+
+}
